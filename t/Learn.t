@@ -8,7 +8,8 @@
 use strict;
 use warnings;
 
-use Test::More tests => 2;
+use Test::More tests => 3;
+use Digest::SHA;
 use lib '../Learn.pm';
 
 BEGIN { use_ok('Learn') };
@@ -18,5 +19,6 @@ BEGIN { use_ok('Learn') };
 # Insert your test code below, the Test::More module is use()ed here so read
 # its man page ( perldoc Test::More ) for help writing this test script.
 
-is(Learn::parse(), Learn::loadfile("Learn.txt"), "load Learn;");
+is(Learn::lowercase(), Learn::loadfile("t/f/lowercased.txt"), "lowercased;");
+is(Digest::SHA::sha256(Learn::lowercase()), Digest::SHA::sha256(Learn::loadfile("t/f/lowercased.txt")), "sha(lowercased);");
 

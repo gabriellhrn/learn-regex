@@ -1,16 +1,15 @@
-#!/usr/bin/perl 
+#!/usr/bin/perl
 
 package Learn;
 
 use strict;
 use warnings;
 
-sub parse {
+sub lowercase {
     my $c = loadfile("Learn.txt");
 
     ##
     # write your code below
-
     ##
 
     $c;
