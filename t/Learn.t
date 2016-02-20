@@ -1,22 +1,35 @@
-# Before 'make install' is performed this script should be runnable with
-# 'make test'. After 'make install' it should work as 'perl Learn.t'
-
-#########################
-
-# change 'tests => 1' to 'tests => last_test_to_print';
 
 use strict;
 use warnings;
 
-use Test::More tests => 2;
+use Test::More;
 use lib '../Learn.pm';
 
 BEGIN { use_ok('Learn') };
 
-#########################
+my $tr = $ARGV[0];
 
-# Insert your test code below, the Test::More module is use()ed here so read
-# its man page ( perldoc Test::More ) for help writing this test script.
+my $c = Learn::loadfile("Learn.txt");
 
-is(Learn::parse(), Learn::loadfile("Learn.txt"), "load Learn;");
+if (not $tr or $tr eq "printid") {
+    is(Learn::printid($c), Learn::loadfile("t/f/printid.txt"), "printid;");
+}
+
+if (not $tr or $tr eq "fixtype") {
+    is(Learn::fixtype($c), Learn::loadfile("t/f/fixtype.txt"), "fixtype;");
+}
+
+if (not $tr or $tr eq "printage") {
+    is(Learn::printage($c), Learn::loadfile("t/f/printage.txt"), "printage;");
+}
+
+if (not $tr or $tr eq "updatepass") {
+    is(Learn::updatepass($c), Learn::loadfile("t/f/updatepass.txt"), "updatepass;");
+}
+
+if (not $tr or $tr eq "sendemail") {
+    is(Learn::sendemail($c), Learn::loadfile("t/f/sendemail.txt"), "sendemail;");
+}
+
+done_testing();
 

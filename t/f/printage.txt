@@ -1,0 +1,10 @@
+idade: 27
+idade: null
+idade: null
+idade: null
+idade: null
+idade: 24
+idade: null
+idade: null
+idade: 7
+idade: null

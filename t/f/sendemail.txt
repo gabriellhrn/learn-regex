@@ -1,0 +1,10 @@
+echo "Olá, Spike, seu usuário é: Spike.Spiegel" | mail spike@regexer.com
+echo "Olá, Edward, seu usuário é: Edward.Elric" | mail ed@regexer.com
+echo "Olá, Sherlock, seu usuário é: Sherlock.Holmes" | mail holmes@regexer.co.uk
+echo "Olá, Koopa, seu usuário é: Koopa.Troopa" | mail king_bowser_the_most_greatest@regexer.com
+echo "Olá, Ragnar, seu usuário é: Ragnar.Lothbrok" | mail ragnar_the_king@regexer.com
+echo "Olá, L, seu usuário é: L.Lawliet" | mail L@regexer.co.jp
+echo "Olá, Emmanuel, seu usuário é: Emmanuel.Goldstein" | mail emmanuel.goldstein@regexer.co.uk
+echo "Olá, Dream, seu usuário é: Dream.Endless" | mail sandman@regexer.com
+echo "Olá, Magali, seu usuário é: Magali.Lima" | mail melancia@regexer.com.br
+echo "Olá, Don, seu usuário é: Don.Corleone" | mail The_Godfather@regexer.com
