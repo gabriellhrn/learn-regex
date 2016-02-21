@@ -16,7 +16,7 @@ sub printid {
 
     ##
     # Escreva as regexes abaixo
-    s!padrão!substituição!g;
+    s!padrão!substituição!gm;
     ##
 
     $_;
@@ -33,7 +33,7 @@ sub fixtype {
 
     ##
     # Escreva as regexes abaixo
-    s!padrão!substituição!g;
+    s!padrão!substituição!gm;
     ##
 
     $_;
@@ -51,7 +51,7 @@ sub printage {
 
     ##
     # Escreva as regexes abaixo
-    s!padrão!substituição!g;
+    s!padrão!substituição!gm;
     ##
 
     $_;
@@ -73,7 +73,7 @@ sub updatepass {
 
     ##
     # Escreva as regexes abaixo
-    s!padrão!substituição!g;
+    s!padrão!substituição!gm;
     ##
 
     $_;
@@ -93,7 +93,7 @@ sub sendemail {
 
     ##
     # Escreva as regexes abaixo
-    s!padrão!substituição!g;
+    s!padrão!substituição!gm;
     ##
 
     $_;
