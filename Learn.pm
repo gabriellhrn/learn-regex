@@ -58,6 +58,25 @@ sub printage {
 }
 
 #
+# printemail
+# Imprimir e-mails cujo nome de usuário tenha de 3 a 10 caracteres.
+# Coloque um traço para os que estiverem fora do padrão.
+# Exemplo:
+#   e-mail: fulano@exemplo.com
+#   e-mail: -
+##
+sub printemail {
+    $_ = $_[0];
+
+    ##
+    # Escreva as regexes abaixo
+    s!padrão!substituição!gm;
+    ##
+
+    $_;
+}
+
+#
 # updatepass
 # Imprimir uma query para atualizar a senha.
 # Use a query abaixo, alterando senha e id:

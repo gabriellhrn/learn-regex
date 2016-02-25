@@ -23,6 +23,10 @@ if (not $tr or $tr eq "printage") {
     is(Learn::printage($c), Learn::loadfile("t/f/printage.txt"), "printage;");
 }
 
+if (not $tr or $tr eq "printemail") {
+    is(Learn::printemail($c), Learn::loadfile("t/f/printemail.txt"), "printemail;");
+}
+
 if (not $tr or $tr eq "updatepass") {
     is(Learn::updatepass($c), Learn::loadfile("t/f/updatepass.txt"), "updatepass;");
 }
